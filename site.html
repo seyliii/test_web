@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilyes KOUBAA - Ingénieur Cloud/DevOps</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Slate 50 */
+            color: #334155; /* Slate 700 */
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0; /* Slate 200 */
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.07);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.08);
+        }
+        .tag {
+            background-color: #e0f2fe; /* Sky 100 */
+            color: #0c4a6e; /* Sky 900 */
+            font-weight: 500;
+        }
+        
+        /* Styles pour les animations au défilement */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Styles pour le bouton "Retour en haut" */
+        #toTopBtn {
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Conteneur principal -->
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Section Héros -->
+        <header class="text-center py-16 md:py-24">
+             <img src="URL_DE_VOTRE_PHOTO_ICI" alt="Photo de Ilyes KOUBAA" 
+                 class="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-white shadow-lg object-cover"
+                 onerror="this.onerror=null;this.src='https://placehold.co/160x160/e2e8f0/334155?text=IK';">
+
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">Ilyes KOUBAA</h1>
+            <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">Futur ingénieur spécialisé en IA & Cloud, passionné par la création de solutions scalables, sécurisées et optimisées.</p>
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+                <a href="#contact" class="bg-sky-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-sky-600 transition-colors shadow-sm">Me Contacter</a>
+                <a href="#projets" class="bg-white text-slate-700 font-semibold py-3 px-6 rounded-lg hover:bg-slate-50 transition-colors border border-slate-300">Voir mes projets</a>
+            </div>
+        </header>
+
+        <main class="space-y-20">
+            
+            <!-- Section Compétences -->
+            <section id="skills" class="fade-in-section">
+                <h2 class="text-3xl font-bold text-slate-900 mb-8 text-center">Compétences Techniques</h2>
+                <div class="card p-6 sm:p-8 rounded-xl">
+                    <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 text-center">
+                        <!-- Python -->
+                        <div class="flex flex-col items-center gap-2 group">
+                            <img src="https://cdn.jsdelivr.net/gh/tandpfun/skill-icons/icons/Python-Dark.svg" alt="Python" class="h-12 w-12 transition-transform duration-200 group-hover:scale-110">
+                            <span class="font-semibold text-slate-700">Python</span>
+                        </div>
+                        <!-- AWS -->
+                        <div class="flex flex-col items-center gap-2 group">
+                            <img src="https://cdn.jsdelivr.net/gh/tandpfun/skill-icons/icons/AWS-Dark.svg" alt="AWS" class="h-12 w-12 transition-transform duration-200 group-hover:scale-110">
+                            <span class="font-semibold text-slate-700">AWS</span>
+                        </div>
+                        <!-- Terraform -->
+                        <div class="flex flex-col items-center gap-2 group">
+                             <img src="https://cdn.jsdelivr.net/gh/tandpfun/skill-icons/icons/Terraform-Dark.svg" alt="Terraform" class="h-12 w-12 transition-transform duration-200 group-hover:scale-110">
+                             <span class="font-semibold text-slate-700">Terraform</span>
+                        </div>
+                        <!-- Docker -->
+                        <div class="flex flex-col items-center gap-2 group">
+                            <img src="https://cdn.jsdelivr.net/gh/tandpfun/skill-icons/icons/Docker.svg" alt="Docker" class="h-12 w-12 transition-transform duration-200 group-hover:scale-110">
+                            <span class="font-semibold text-slate-700">Docker</span>
+                        </div>
+                         <!-- SQL -->
+                        <div class="flex flex-col items-center gap-2 group">
+                             <img src="https://cdn.jsdelivr.net/gh/tandpfun/skill-icons/icons/PostgreSQL-Dark.svg" alt="SQL" class="h-12 w-12 transition-transform duration-200 group-hover:scale-110">
+                             <span class="font-semibold text-slate-700">SQL</span>
+                        </div>
+                         <!-- Node.js -->
+                        <div class="flex flex-col items-center gap-2 group">
+                             <img src="https://cdn.jsdelivr.net/gh/tandpfun/skill-icons/icons/NodeJS-Dark.svg" alt="Node.js" class="h-12 w-12 transition-transform duration-200 group-hover:scale-110">
+                             <span class="font-semibold text-slate-700">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Expériences -->
+            <section id="experience" class="fade-in-section">
+                <h2 class="text-3xl font-bold text-slate-900 mb-8 text-center">Expérience Professionnelle</h2>
+                <div class="space-y-8 max-w-2xl mx-auto">
+                    <!-- Expérience 1 -->
+                    <div class="card p-6 rounded-xl">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-bold text-sky-600">Ingénieur Cloud (Stagiaire)</h3>
+                                <p class="text-slate-800 font-semibold">Devoteam A-Cloud</p>
+                            </div>
+                            <p class="text-slate-500 text-sm font-medium">2025</p>
+                        </div>
+                        <ul class="mt-4 list-disc list-inside text-slate-600 space-y-2">
+                            <li>Conception et déploiement d'une plateforme GenAI avec Terraform et AWS (ECS Fargate, S3, Aurora).</li>
+                            <li>Intégration d'outils d'automatisation (n8n) et d'interfaces conversationnelles (OpenWebUI).</li>
+                            <li>Mise en place de connecteurs IA avec AWS Bedrock et des LLMs open-source.</li>
+                        </ul>
+                    </div>
+                    <!-- Expérience 2 -->
+                    <div class="card p-6 rounded-xl">
+                         <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-bold text-sky-600">Vendeur en demi-mesure</h3>
+                                <p class="text-slate-800 font-semibold">Father and Sons</p>
+                            </div>
+                            <p class="text-slate-500 text-sm font-medium">2022 - 2024</p>
+                        </div>
+                        <p class="mt-4 text-slate-600">
+                            Développement de compétences en communication, marketing et gestion relationnelle.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Section Projets -->
+            <section id="projets" class="fade-in-section">
+                <h2 class="text-3xl font-bold text-slate-900 mb-8 text-center">Projets Notables</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Projet 1 -->
+                    <div class="card p-6 rounded-xl flex flex-col">
+                        <h3 class="text-xl font-bold text-sky-600">Classification de texte avec BERT</h3>
+                        <p class="text-slate-500 text-sm mb-4">Projet Académique - 2025</p>
+                        <p class="text-slate-600 flex-grow">Construction d'un modèle de classification de texte (TensorFlow/BERT) avec une interface de visualisation en Flutter.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="tag text-xs py-1 px-3 rounded-full">TensorFlow</span>
+                            <span class="tag text-xs py-1 px-3 rounded-full">BERT</span>
+                            <span class="tag text-xs py-1 px-3 rounded-full">Flutter</span>
+                        </div>
+                    </div>
+                    <!-- Projet 2 -->
+                    <div class="card p-6 rounded-xl flex flex-col">
+                        <h3 class="text-xl font-bold text-sky-600">Prédiction de Churn Client</h3>
+                        <p class="text-slate-500 text-sm mb-4">Projet Académique - 2024</p>
+                        <p class="text-slate-600 flex-grow">Modélisation (Random Forest, Logistic Regression) pour prédire le désabonnement client et restitution via un dashboard Power BI.</p>
+                         <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="tag text-xs py-1 px-3 rounded-full">Scikit-learn</span>
+                            <span class="tag text-xs py-1 px-3 rounded-full">Python</span>
+                            <span class="tag text-xs py-1 px-3 rounded-full">Power BI</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <!-- Section Passions -->
+            <section id="passions" class="fade-in-section">
+                <h2 class="text-3xl font-bold text-slate-900 mb-8 text-center">En dehors du code</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Passion 1 -->
+                    <div class="card rounded-xl p-6 text-center">
+                        <div class="bg-sky-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-sky-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" /></svg>
+                        </div>
+                        <h3 class="font-bold text-slate-800">Kaggle & Projets Perso</h3>
+                        <p class="text-sm text-slate-600 mt-1">Participation à des compétitions et animation d'un blog de vulgarisation IA.</p>
+                    </div>
+                    <!-- Passion 2 -->
+                    <div class="card rounded-xl p-6 text-center">
+                        <div class="bg-sky-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-sky-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-slate-800">Boxe Anglaise</h3>
+                        <p class="text-sm text-slate-600 mt-1">7 ans de pratique, ancien champion régional, et une passion pour la discipline.</p>
+                    </div>
+                    <!-- Passion 3 -->
+                    <div class="card rounded-xl p-6 text-center">
+                        <div class="bg-sky-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                           <svg class="w-8 h-8 text-sky-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256"><path d="M248,128a8,8,0,0,1-8,8H184v32a8,8,0,0,1-16,0V136H88v32a8,8,0,0,1-16,0V136H16a8,8,0,0,1,0-16H72V80a8,8,0,0,1,16,0v32h80V80a8,8,0,0,1,16,0v32h56A8,8,0,0,1,248,128ZM80,64H40A24,24,0,0,0,16,88v80a24,24,0,0,0,24,24H80a24,24,0,0,0,24-24V88A24,24,0,0,0,80,64Zm8,104a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V88a8,8,0,0,1,8-8H80a8,8,0,0,1,8,8ZM216,64H176a24,24,0,0,0-24,24v80a24,24,0,0,0,24,24h40a24,24,0,0,0,24-24V88A24,24,0,0,0,216,64Zm8,104a8,8,0,0,1-8,8H184a8,8,0,0,1-8-8V88a8,8,0,0,1,8-8h32a8,8,0,0,1,8,8Z"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-slate-800">Musculation</h3>
+                        <p class="text-sm text-slate-600 mt-1">Une routine quotidienne pour l'équilibre et le dépassement de soi.</p>
+                    </div>
+                     <!-- Passion 4 -->
+                    <div class="card rounded-xl p-6 text-center">
+                         <div class="bg-sky-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-sky-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
+                        </div>
+                        <h3 class="font-bold text-slate-800">Apprentissage</h3>
+                        <p class="text-sm text-slate-600 mt-1">Curieux de nature, j'explore constamment de nouvelles technologies et de nouveaux sujets.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Pied de page -->
+        <footer id="contact" class="text-center py-16 mt-16 border-t border-slate-200">
+            <h2 class="text-2xl font-bold text-slate-900 mb-2">Entrons en contact</h2>
+            <p class="text-slate-600 mb-6">N'hésitez pas à m'envoyer un message.</p>
+            <div class="flex justify-center items-center gap-6">
+                <a href="mailto:koubaailyes2@gmail.com" title="Email" class="text-slate-500 hover:text-sky-500 transition-colors">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/ilyes-koubaa" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="text-slate-500 hover:text-sky-500 transition-colors">
+                     <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                </a>
+                <a href="https://github.com/seyliii" target="_blank" rel="noopener noreferrer" title="GitHub" class="text-slate-500 hover:text-sky-500 transition-colors">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"></path></svg>
+                </a>
+            </div>
+            <p class="text-xs text-slate-500 mt-8">© 2025 Ilyes KOUBAA. Conçu avec soin.</p>
+        </footer>
+    </div>
+
+    <!-- Bouton "Retour en haut" -->
+    <button id="toTopBtn" class="fixed bottom-5 right-5 bg-sky-500 text-white rounded-full p-3 shadow-lg hover:bg-sky-600 transition-colors opacity-0 invisible">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+    </button>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Logique pour les animations au défilement
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, {
+                rootMargin: '0px',
+                threshold: 0.1
+            });
+
+            const sections = document.querySelectorAll('.fade-in-section');
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // Logique pour le bouton "Retour en haut"
+            const toTopBtn = document.getElementById('toTopBtn');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    toTopBtn.classList.remove('opacity-0', 'invisible');
+                } else {
+                    toTopBtn.classList.add('opacity-0', 'invisible');
+                }
+            });
+
+            toTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
